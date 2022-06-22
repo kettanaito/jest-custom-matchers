@@ -1,0 +1,25 @@
+{
+  "name": "jest-asymmetric-matchers",
+  "version": "0.0.0",
+  "description": "Writing custom asymmetric matchers in Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "matcher",
+    "asymmetric",
+    "custom",
+    "extend"
+  ],
+  "author": "Artem Zakharchenko <kettanaito@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
