@@ -1,3 +1,5 @@
+import { MatcherFunction } from "expect";
+
 declare global {
   namespace jest {
     interface Matchers<R, T> {
@@ -10,18 +12,8 @@ declare global {
     }
 
     interface ExpectExtendMap {
-      toBeWithinRange(
-        this: jest.MatcherContext,
-        actual: unknown,
-        min: number,
-        max: number
-      ): jest.CustomMatcherResult;
-
-      setContaining<T>(
-        this: jest.MatcherContext,
-        actual: unknown,
-        expected: T[]
-      ): jest.CustomMatcherResult;
+      toBeWithinRange: MatcherFunction<[min: number, max: number]>;
+      setContaining: MatcherFunction<[unknown[]]>;
     }
   }
 }
